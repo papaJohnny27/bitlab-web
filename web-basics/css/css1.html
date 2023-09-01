@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+    />
+
+    <style>
+        table th {
+            text-align: start;
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+
+        table td {
+            text-align: left;
+            padding: 5px;
+        }
+
+        table tr.winner {
+            background-color: green;
+            color: white;
+        }
+
+        table tr.winners {
+            background-color: greenyellow;
+        }
+
+        table tr.eliminated {
+            background-color: pink;
+        }
+
+        table tr {
+            background-color: bisque;
+        }
+
+        .pagination > li.page-item > a {
+            color: black;
+        }
+
+        .pagination > li.page-item.active > a {
+            background-color: black;
+            border-color: black;
+            color: white;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <title>BITLAB NEWS</title>
+</head>
+<body>
+<header>
+    <nav
+            class="navbar navbar-expand-lg"
+            style="background-color: #1c5978"
+            data-bs-theme="dark"
+    >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>BITLAB</b> NEWS</a>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                    >All News</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Sport</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Politics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Finance</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="container">
+    <form class="d-flex align-items-center mt-3">
+        <div class="col-auto flex-grow-1">
+            <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword2"
+                    placeholder="News, politics, sport, finance, science ..."
+            />
+        </div>
+        <div class="ms-3">
+            <button
+                    type="submit"
+                    class="btn"
+                    style="background-color: #1c5978"
+                    data-bs-theme="dark"
+            >
+                SEARCH
+            </button>
+        </div>
+    </form>
+
+    <main class="row mt-4">
+        <div class="col-4">
+            <h5>EURO 2023 best scores</h5>
+            <table class="table table-success table-striped">
+                <thead>
+                <tr class="table-dark">
+                    <th>Player</th>
+                    <th>Minutes</th>
+                    <th>Goals</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Cristiano Ronaldo</td>
+                    <td>369</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Patrick Shick</td>
+                    <td>455</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Harry Kane</td>
+                    <td>512</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Karim Benzema</td>
+                    <td>301</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Romelu Lukaku</td>
+                    <td>479</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Emil Forsberg</td>
+                    <td>491</td>
+                    <td>4</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h5>FIFA Rating</h5>
+            <div class="d-flex justify-content-between border px-3 py-2">
+                <span>1. <b>Italy</b></span>
+                <span class="bg-success text-white rounded-pill px-2"
+                >1442 pts</span
+                >
+            </div>
+            <div class="d-flex justify-content-between border px-3 py-2">
+                <span>2. <b>England</b></span>
+                <span class="bg-success text-white rounded-pill px-2"
+                >1321 pts</span
+                >
+            </div>
+            <div class="d-flex justify-content-between border px-3 py-2">
+                <span>3. <b>Belgium</b></span>
+                <span class="bg-success text-white rounded-pill px-2"
+                >1301 pts</span
+                >
+            </div>
+            <div class="d-flex justify-content-between border px-3 py-2">
+                <span>4. <b>France</b></span>
+                <span class="bg-success text-white rounded-pill px-2"
+                >1287 pts</span
+                >
+            </div>
+            <div class="d-flex justify-content-between border px-3 py-2">
+                <span>5. <b>Spain</b></span>
+                <span class="bg-success text-white rounded-pill px-2"
+                >1215 pts</span
+                >
+            </div>
+            <div class="d-flex justify-content-between border px-3 py-2">
+                <span>6. <b>Germany</b></span>
+                <span class="bg-success text-white rounded-pill px-2"
+                >1123 pts</span
+                >
+            </div>
+            <div class="d-flex justify-content-between border px-3 py-2">
+                <span>7. <b>France</b></span>
+                <span class="bg-success text-white rounded-pill px-2"
+                >1123 pts</span
+                >
+            </div>
+            <div class="d-flex justify-content-between border px-3 py-2">
+                <span>8. <b>Denmark</b></span>
+                <span class="bg-success text-white rounded-pill px-2"
+                >1101 pts</span
+                >
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card" style="border: none">
+                <h5 class="card-title">Investigating my yoga school</h5>
+                <img
+                        src="img/yoga.jpg"
+                        class="card-img-top"
+                        style="border-radius: 0"
+                        alt="..."
+                />
+                <div class="card-body px-0">
+                    <p class="card-text">
+                       Sinse a discovered yoga in my mid-20s,it had become a huge part of my world.
+                        Like many devoted yogis,it was not just an exercise class for me, but a way of life.
+                        I did't just teach classes at my local Sivananda centre.I volunteered to cook and clean
+                        there too.Sivananda teaching influenced every aspect of my existence.
+                    </p>
+                    <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+            <div class="mx-4">
+                <span>34 minutes,</span>
+                <span>author:</span>
+                <b>Lorenzo Salvador</b>
+            </div>
+
+            <nav aria-label="Page navigation example" class="mt-3">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#">Previous</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-2">
+            <div class="p-1 bg-secondary-subtle">
+                <h6>Djokovic wins again</h6>
+                <img class="img-fluid" src="img/Djokovic.jpg" alt="image Djokovic" />
+               Djokovic makes fast start on Wimbledon
+            </div>
+            <div class="p-1 bg-secondary-subtle mt-2">
+                <h6>Japan landside</h6>
+                <img class="img-fluid" src="img/japan.webp" alt="image Japan" />
+                Elderly couple among survivors pulled
+                from buried homes
+            </div>
+            <div class="p-1 bg-secondary-subtle mt-2">
+                <h6>Bitlab worklife</h6>
+                <img class="img-fluid" src="img/office.jpg" alt="image office" />
+                The damaging effects of boreout at work
+            </div>
+        </div>
+    </main>
+</section>
+</body>
+</html>
